@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "fmt": "oxfmt .",
+    "lint": "oxlint . && oxfmt --check .",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {

@@ -9,8 +9,8 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "fmt": "oxfmt .",
-    "lint": "oxlint . && oxfmt --check .",
+    "fmt": "turbo run fmt",
+    "lint": "turbo run lint",
     "test": "turbo run test",
     "typecheck": "turbo run typecheck"
   },
