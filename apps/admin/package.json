@@ -1,0 +1,11 @@
+{
+  "name": "@bilivesync/admin",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@bilivesync/ui-components": "0.1.0"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}
