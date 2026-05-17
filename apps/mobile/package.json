@@ -7,6 +7,10 @@
     "lint": "oxlint . && oxfmt --check .",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
+  "dependencies": {
+    "react-native": "^0.76.0",
+    "react-native-wechat-lib": "^3.0.6"
+  },
   "devDependencies": {
     "oxfmt": "^0.50.0",
     "oxlint": "^1.65.0",
