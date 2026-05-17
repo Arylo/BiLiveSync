@@ -4,14 +4,13 @@ import type { StoredMediaRecord, UploadPayload } from './media.types.js';
 
 export class MediaService {
   public async createLivePhoto(payload: UploadPayload): Promise<StoredMediaRecord> {
-    const now = Date.now();
     const mediaId = randomUUID();
 
     const media: StoredMediaRecord = {
       id: mediaId,
       type: payload.videoPath ? 'live_photo' : 'photo',
       image_url: `/media/${mediaId}/image`,
-      thumbnail_url: `/media/${mediaId}/thumbnail?ts=${now}`,
+      thumbnail_url: `/media/${mediaId}/thumbnail`,
       image_path: payload.imagePath,
       ...(payload.videoPath
         ? {
