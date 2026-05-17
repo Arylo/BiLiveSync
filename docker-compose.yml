@@ -1,6 +1,6 @@
 services:
   server:
-    image: node:20-alpine
+    image: node:24-alpine
     working_dir: /app
     command: sh -c "npm install && npm run dev --workspace @bibiphoto/server"
     volumes:
@@ -12,7 +12,7 @@ services:
       - "3000:3000"
 
   admin:
-    image: node:20-alpine
+    image: node:24-alpine
     working_dir: /app
     command: sh -c "npm install && npm run dev --workspace @bibiphoto/admin"
     volumes:
