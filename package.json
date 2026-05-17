@@ -1,0 +1,30 @@
+{
+  "name": "bibiphoto",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "fmt": "turbo run fmt",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "oxfmt": "^0.50.0",
+    "oxlint": "^1.65.0",
+    "react": "^19.0.0",
+    "turbo": "^2.0.12",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "npm@10.9.2"
+}

@@ -1,0 +1,21 @@
+services:
+  server:
+    image: node:24-alpine
+    working_dir: /app
+    command: sh -c "npm install && npm run dev --workspace @bibiphoto/server"
+    volumes:
+      - ./:/app
+    environment:
+      NODE_ENV: development
+      DATABASE_URL: file:/data/bibiphoto.db
+    ports:
+      - "3000:3000"
+
+  admin:
+    image: node:24-alpine
+    working_dir: /app
+    command: sh -c "npm install && npm run dev --workspace @bibiphoto/admin"
+    volumes:
+      - ./:/app
+    ports:
+      - "5173:5173"
