@@ -1,4 +1,4 @@
-import type { MediaItem } from "@bilivesync/shared-api";
+import type { MediaItem } from "@bibiphoto/shared-api";
 
 export interface LivePhotoPreviewProps {
   media: MediaItem;

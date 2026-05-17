@@ -1,4 +1,4 @@
-import type { UploadMediaResponse } from "@bilivesync/shared-api";
+import type { UploadMediaResponse } from "@bibiphoto/shared-api";
 
 import { MediaService } from "./media.service.js";
 

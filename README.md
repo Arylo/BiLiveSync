@@ -1,4 +1,4 @@
-# BiLiveSync
+# BiBiPhoto
 
 私有化相册同步系统（Live Photo 完整支持）初始化骨架，基于 **TypeScript + npm workspaces + TurboRepo**。
 

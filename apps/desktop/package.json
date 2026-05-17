@@ -1,12 +1,12 @@
 {
-  "name": "@bilivesync/desktop",
+  "name": "@bibiphoto/desktop",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@bilivesync/shared-api": "0.1.0",
-    "@bilivesync/ui-components": "0.1.0"
+    "@bibiphoto/shared-api": "0.1.0",
+    "@bibiphoto/ui-components": "0.1.0"
   }
 }
