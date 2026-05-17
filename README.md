@@ -44,7 +44,7 @@
 
 ### 3.1 Live Photo 数据结构（共享类型）
 
-文件：`/home/runner/work/BiLiveSync/BiLiveSync/packages/shared-api/src/index.ts`
+文件：`packages/shared-api/src/index.ts`
 
 - `MediaItem` 包含 `video_url` / `video_compatible_url`
 - 上传响应 `UploadMediaResponse`
@@ -53,9 +53,9 @@
 
 文件：
 
-- `/home/runner/work/BiLiveSync/BiLiveSync/apps/server/src/media/upload.controller.ts`
-- `/home/runner/work/BiLiveSync/BiLiveSync/apps/server/src/media/media.service.ts`
-- `/home/runner/work/BiLiveSync/BiLiveSync/apps/server/src/database/schema.sql`
+- `apps/server/src/media/upload.controller.ts`
+- `apps/server/src/media/media.service.ts`
+- `apps/server/src/database/schema.sql`
 
 覆盖点：
 
@@ -69,10 +69,10 @@
 
 文件：
 
-- `/home/runner/work/BiLiveSync/BiLiveSync/apps/mobile/metro.config.js`
-- `/home/runner/work/BiLiveSync/BiLiveSync/apps/mobile/src/modules/livePhotoModule.ts`
-- `/home/runner/work/BiLiveSync/BiLiveSync/apps/mobile/src/share/livePhotoShare.ts`
-- `/home/runner/work/BiLiveSync/BiLiveSync/apps/mobile/src/network/lanPolicy.ts`
+- `apps/mobile/metro.config.js`
+- `apps/mobile/src/modules/livePhotoModule.ts`
+- `apps/mobile/src/share/livePhotoShare.ts`
+- `apps/mobile/src/network/lanPolicy.ts`
 
 覆盖点：
 
@@ -85,19 +85,19 @@
 
 文件：
 
-- `/home/runner/work/BiLiveSync/BiLiveSync/packages/ui-components/src/index.tsx`
-- `/home/runner/work/BiLiveSync/BiLiveSync/apps/admin/tailwind.config.ts`
-- `/home/runner/work/BiLiveSync/BiLiveSync/apps/admin/postcss.config.js`
+- `packages/ui-components/src/index.tsx`
+- `apps/admin/tailwind.config.ts`
+- `apps/admin/postcss.config.js`
 
 ### 3.5 服务端 HTTP + 反向代理 HTTPS
 
-文件：`/home/runner/work/BiLiveSync/BiLiveSync/docker-compose.yml`
+文件：`docker-compose.yml`
 
 当前仅暴露 HTTP（3000）；公网 HTTPS 终止由外部 Nginx/Caddy/CDN 负责。
 
 ### 3.6 平台标识头
 
-文件：`/home/runner/work/BiLiveSync/BiLiveSync/apps/admin/src/platformHeader.ts` 与 `/home/runner/work/BiLiveSync/BiLiveSync/apps/server/src/common/platform-header.ts`
+文件：`apps/admin/src/platformHeader.ts` 与 `apps/server/src/common/platform-header.ts`
 
 统一使用 `X-Platform: ios | android | desktop | web`。
 
