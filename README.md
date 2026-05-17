@@ -52,11 +52,13 @@
 ### 3.2 服务端上传与转码（TypeScript）
 
 文件：
+
 - `/home/runner/work/BiLiveSync/BiLiveSync/apps/server/src/media/upload.controller.ts`
 - `/home/runner/work/BiLiveSync/BiLiveSync/apps/server/src/media/media.service.ts`
 - `/home/runner/work/BiLiveSync/BiLiveSync/apps/server/src/database/schema.sql`
 
 覆盖点：
+
 - 上传接口字段：`image`, `video`, `album_id`
 - Live Photo 关联落库字段：`image_path`, `video_path`
 - 兼容视频字段：`video_compatible_path`
@@ -66,12 +68,14 @@
 ### 3.3 React Native 关键模块（TypeScript）
 
 文件：
+
 - `/home/runner/work/BiLiveSync/BiLiveSync/apps/mobile/metro.config.js`
 - `/home/runner/work/BiLiveSync/BiLiveSync/apps/mobile/src/modules/livePhotoModule.ts`
 - `/home/runner/work/BiLiveSync/BiLiveSync/apps/mobile/src/share/livePhotoShare.ts`
 - `/home/runner/work/BiLiveSync/BiLiveSync/apps/mobile/src/network/lanPolicy.ts`
 
 覆盖点：
+
 - Metro `watchFolders` 指向 root `node_modules` 和 `packages`
 - iOS 原生能力 TS Bridge：保存 Live Photo、动态分享调用
 - 动态分享失败自动降级静态图（`react-native-wechat-lib`）
@@ -80,6 +84,7 @@
 ### 3.4 桌面/后台 Shadcn + Tailwind 复用基础
 
 文件：
+
 - `/home/runner/work/BiLiveSync/BiLiveSync/packages/ui-components/src/index.tsx`
 - `/home/runner/work/BiLiveSync/BiLiveSync/apps/admin/tailwind.config.ts`
 - `/home/runner/work/BiLiveSync/BiLiveSync/apps/admin/postcss.config.js`

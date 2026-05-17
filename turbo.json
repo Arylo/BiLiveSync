@@ -9,8 +9,11 @@
       "cache": false,
       "persistent": true
     },
+    "fmt": {
+      "cache": false
+    },
     "lint": {
-      "dependsOn": ["^lint"]
+      "cache": false
     },
     "test": {
       "dependsOn": ["^test"],

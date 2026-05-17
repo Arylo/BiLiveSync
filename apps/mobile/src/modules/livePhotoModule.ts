@@ -1,4 +1,4 @@
-import { NativeModules } from 'react-native';
+import { NativeModules } from "react-native";
 
 export interface ShareLivePhotoRequest {
   imagePath: string;
@@ -15,7 +15,7 @@ interface LivePhotoModule {
 const moduleValue = NativeModules.LivePhotoModule as LivePhotoModule | undefined;
 
 if (!moduleValue) {
-  throw new Error('LivePhotoModule is not linked.');
+  throw new Error("LivePhotoModule is not linked.");
 }
 
 export const livePhotoModule = moduleValue;

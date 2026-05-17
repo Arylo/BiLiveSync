@@ -1,6 +1,6 @@
-import type { UploadMediaResponse } from '@bilivesync/shared-api';
+import type { UploadMediaResponse } from "@bilivesync/shared-api";
 
-import { MediaService } from './media.service.js';
+import { MediaService } from "./media.service.js";
 
 export interface MultipartUpload {
   image: { filepath: string };
@@ -15,7 +15,7 @@ export class UploadController {
     const media = await this.mediaService.createLivePhoto({
       albumId: form.album_id,
       imagePath: form.image.filepath,
-      ...(form.video?.filepath ? { videoPath: form.video.filepath } : {})
+      ...(form.video?.filepath ? { videoPath: form.video.filepath } : {}),
     });
 
     return { media };
